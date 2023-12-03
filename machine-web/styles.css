@@ -1,0 +1,128 @@
+body,
+ul,
+li {
+    color: black;
+    font-family: Sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(225, 222, 199);
+}
+
+header {
+    background-color: rgb(225, 222, 199);
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+.title {
+    color: white;
+    width: 100%;
+    background-color: rgb(217, 126, 142);
+    display: inline-block;
+    padding: 2px 0px;
+    position: sticky;
+    top: 0px;
+}
+
+.banner {
+    height: 300px;
+    overflow: hidden;
+}
+
+.banner img {
+    margin: 0px 0px 0px 0px;
+    width: 100%;
+}
+
+.newItem {
+    background-color: rgb(225, 222, 199);
+    padding: 10px; /* Reduzi o padding para que haja mais espaço disponível */
+    color: white;
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha se não couberem */
+    justify-content: center;
+    box-sizing: border-box;
+    max-width: 100%;
+    overflow: auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Cria duas colunas de largura igual */
+    gap: 10px; /* Adiciona um espaçamento entre os elementos */
+
+    padding-bottom: 2%;
+}
+
+.newItem input {
+    color: white;
+    box-sizing: border-box;
+    width: calc(50% - 10px); /* Garante que os inputs tenham 50% da largura da seção com algum espaço entre eles */
+    height: 30px; /* Ajuste a altura conforme necessário */
+    margin: 5px;
+    width: 100%;
+}
+
+.addBtn {
+    cursor: pointer;
+    padding: 10px;
+    background-color: rgb(39, 37, 37);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+
+.addBtn:hover {
+    background-color: rgb(217, 126, 142);
+    color: white;
+}
+
+.items {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.close:hover {
+    color: #f44336;
+    font-weight: bolder;
+}
+
+.update:hover {
+    color: #000000;
+    font-weight: bolder;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 10px;
+    font-size: 18px;
+    transition: 0.2s;
+    text-align: start;
+}
+
+table{
+    background-color: black;
+    width: 50%;
+}
+
+tr:nth-child(odd){
+    background-color: #eee;
+}
+
+th:nth-child(1){
+    width: 80%;
+}
+
+tr:hover {
+    background: rgb(200, 199, 199);
+}
+

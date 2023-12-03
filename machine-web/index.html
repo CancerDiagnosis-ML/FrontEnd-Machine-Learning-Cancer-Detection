@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="img/laco.png" type="image/x-icon">
+
+    <title>Diagnóstico de Câncer-ML</title>
+    <link rel="icon" href="img/home_logo.jpeg" type="image/png">
+</head>
+
+<body>
+     <!-- Cabeçalho de informações do sistema -->
+    <header>
+        <div class="title">
+            <h2>Bem-Vindo ao Diagnóstico de Câncer-ML</h2>
+            <br>
+            <p>Este sistema foi desenvolvido para auxiliar no diagnóstico de câncer de mama.</p>
+            <p>Para isso, basta preencher os campos abaixo com os dados do paciente e clicar em "Diagnosticar".</p>
+        </div>
+    </header>
+
+     <!-- Opções para adicionar um novo item -->
+     
+    <section class="newItem">
+        <input type="text" id="newInput" placeholder="Nome">
+        <input type="text" id="newRadius" placeholder="Radius">
+        <input type="text" id="newTexture" placeholder="Texture">
+        <input type="text" id="newPerimeter" placeholder="Perimeter">
+        <input type="text" id="newArea" placeholder="Area">
+        <input type="text" id="newSmoothness" placeholder="Smoothness">
+        <input type="text" id="newCompactness" placeholder="Compactness">
+        <input type="text" id="newConcavity" placeholder="Concavity">
+        <input type="text" id="newConcavePoints" placeholder="Concave Points">
+        <input type="text" id="newSymmetry" placeholder="Symmetry">
+        <input type="text" id="newFractalDimension" placeholder="Fractal Dimension">
+        <span onclick="newItem()" class="addBtn">Diagnosticar</span>
+    </section>
+
+
+
+    <!-- Tabela com items existentes -->
+    <section class="items">
+        <table id="myTable">
+            <tr>
+                <th>Nome</th>
+                <th>Radius</th>
+                <th>Texture</th>
+                <th>Perimeter</th>
+                <th>Area</th>
+                <th>Smoothness</th>
+                <th>Compactness</th>
+                <th>Concavity</th>
+                <th>Concave Points</th>
+                <th>Symmetry</th>
+                <th>Fractal Dimension</th>
+                <th>Diagnostic</th>
+                <th><img src="https://cdn-icons-png.flaticon.com/512/126/126468.png" width="15" height="15"></th>
+            </tr>
+        </table>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="img/laco.png" type="image/x-icon">
+
+    <title>Acervo</title>
+</head>
+
+<body>
+    Cabeçalho de informações do sistema 
+    <header>
+        <div class="title">
+            <h2>Acervo Digital</h2>
+        </div>
+        <div class="banner">
+            <img src="img/estante.jpg" alt="y">
+        </div>
+    </header> -->
+
+    <!-- Slogan para representação da página -->
+    <!-- <header>
+        <h1 class="slogan">Acervo Digital, o mundo dos livros em suas mãos!</h1>
+        <h2 class="slogan-secondary">Descubra um mundo de conhecimento em cada página.</h2>
+    </header> -->
+
+    <!-- Botões para redirecionamento -->
+    <!-- <section class="buttonsMenus">
+        <button id="btnCadastro" class="addBookBtn"> Cadastrar Livro</button>
+        <button id="btnBusca" class="searchBookBtn">Buscar Livro</button>
+    </section> -->
+
+    <!-- Trecho para informações -->
+    <!-- <section class="infoMenus">
+        <span>
+            Descubra um mundo de conhecimento em cada página. <br>
+            Cadastre seu livro e compartilhe-o com outros leitores. <br>
+            Ou faça uma busca rápida e encontre o livro perfeito para sua leitura. <br>
+            O poder dos livros está em suas mãos! <br>
+        </span>
+
+        <span>
+            Navegue por nossa vasta biblioteca virtual e <br>
+            mergulhe em histórias cativantes de todos os gêneros. <br>
+            Desfrute da liberdade de explorar diferentes universos literários <br>
+            e expandir seus horizontes intelectuais. <br>
+            Compartilhe sua paixão pela leitura e <br>
+            faça parte de uma comunidade unida por sua sede por conhecimento. <br>
+
+            <img src="img/biblioteca.jpg" width="300px" height="300px">
+        </span>
+
+    </section> -->
+
+    <!-- Slogan para cadastro de livro -->
+    <!-- <header class="infoNewItem">
+        <h1 class="slogan">Cadastro de Livros!</h1>
+    </header> -->
+
+    <!-- Opções para adicionar um novo livro -->
+    <!-- <section class="newItem">
+        <input type="text" id="newInput" placeholder="Adicionar novo livro:">
+        <input type="text" id="newGender" placeholder="Genero:">
+        <input type="text" id="newQuantity" placeholder="Quantidade:">
+        <input type="text" id="newPrice" placeholder="Valor:">
+        <span onclick="newItem()" class="addBtn">Adicionar</span>
+    </section> -->
+
+    <!-- Tabela com items existentes -->
+    <!-- <section class="items">
+        <table id="myTable">
+            <tr>
+                <th>Nome</th>
+                <th>Genero</th>
+                <th>Quantidade</th>
+                <th>Valor</th>
+                <th><img src="https://cdn-icons-png.flaticon.com/512/126/126468.png" width="15px" height="15px"></th>
+            </tr>
+        </table>
+    </section> -->
+
+
+    <!-- Slogan para busca de livro -->
+    <!-- <header class="infoBuscaItem">
+        <h1 class="slogan">Busca de Livros!</h1>
+    </header> -->
+
+    <!-- Opções para buscar um livro -->
+    <!-- <section class="searchItem">
+        <input type="text" id="inputRequired" placeholder="Nome do livro requerido:">
+        <span onclick="searchItem()" class="addBtn">Buscar</span>
+    </section> -->
+
+    <!-- Tabela para itens de busca/pesquisa -->
+    <!-- <section class="itemsBusca">
+        <table id="myTableRequired">
+            <tr>
+                <th>Nome</th>
+                <th>Genero</th>
+                <th>Quantidade</th>
+                <th>Valor</th>
+                <th><img src="https://cdn-icons-png.flaticon.com/512/126/126468.png" width="15px" height="15px"></th>
+            </tr>
+        </table>
+    </section>
+
+    <script src="scripts.js"></script> -->
+
+<!-- </body> -->
+
+<!-- </html>  } -->
+
