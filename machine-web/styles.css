@@ -39,7 +39,7 @@ header {
 .newItem {
     background-color: rgb(225, 222, 199);
     padding: 10px; /* Reduzi o padding para que haja mais espaço disponível */
-    color: white;
+    color: black;
     display: flex;
     flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha se não couberem */
     justify-content: center;
@@ -55,7 +55,7 @@ header {
 }
 
 .newItem input {
-    color: white;
+    color: black;
     box-sizing: border-box;
     width: calc(50% - 10px); /* Garante que os inputs tenham 50% da largura da seção com algum espaço entre eles */
     height: 30px; /* Ajuste a altura conforme necessário */
@@ -110,7 +110,7 @@ td {
 }
 
 table{
-    background-color: black;
+    background-color: #eee;
     width: 50%;
 }
 
