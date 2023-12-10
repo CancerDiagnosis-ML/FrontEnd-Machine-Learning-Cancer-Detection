@@ -13,3 +13,7 @@ Os dados inseridos pelo usuário são enviados ao back-end para que o modelo de 
 Exibição do Resultado da Predição:
 
 O front-end exibirá o resultado da predição realizada pelo modelo, indicando se os dados fornecidos estão associados a tumores benignos ou malignos.
+
+## Como executar
+
+Basta fazer o download do projeto e abrir o arquivo index.html no seu browser.
