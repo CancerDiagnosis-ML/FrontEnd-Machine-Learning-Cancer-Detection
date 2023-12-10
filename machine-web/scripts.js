@@ -1,5 +1,4 @@
-/*
-  --------------------------------------------------------------------------------------
+/*--------------------------------------------------------------------------------------
   Função para obter a lista existente do servidor via requisição GET
   --------------------------------------------------------------------------------------
 */
@@ -11,16 +10,16 @@ const getList = async () => {
       .then((response) => response.json())
       .then((data) => {
         data.mulheres.forEach(item => insertList(item.name, 
-                                                  item.radius, 
-                                                  item.texture,
-                                                  item.perimeter,
-                                                  item.area,
-                                                  item.smoothness,
-                                                  item.compactness,
-                                                  item.concavity,
-                                                  item.concave,
-                                                  item.symmetry,
-                                                  item.fractal,
+                                                  item.rad_mean, 
+                                                  item.tex_mean,
+                                                  item.perim_mean,
+                                                  item.area_mean,
+                                                  item.smoo_mean,
+                                                  item.comp_mean,
+                                                  item.concav_mean,
+                                                  item.cp_mean,
+                                                  item.sym_mean,
+                                                  item.fd_mean,
                                                   item.outcome
                                                 ))
       })
@@ -48,16 +47,16 @@ const getList = async () => {
       
     const formData = new FormData();
     formData.append('name', inputWoman);
-    formData.append('radius', inputRadius);
-    formData.append('texture', inputTexture);
-    formData.append('perimeter', inputPerimeter);
-    formData.append('area', inputArea);
-    formData.append('smoothness', inputSmoothness);
-    formData.append('compactness', inputCompactness);
-    formData.append('concavity', inputConcavity);
-    formData.append('concave', inputConcave);
-    formData.append('symmetry', inputSymmetry);
-    formData.append('fractal', inputFractal);
+    formData.append('rad_mean', inputRadius);
+    formData.append('tex_mean', inputTexture);
+    formData.append('perim_mean', inputPerimeter);
+    formData.append('area_mean', inputArea);
+    formData.append('smoo_mean', inputSmoothness);
+    formData.append('comp_mean', inputCompactness);
+    formData.append('concav_mean', inputConcavity);
+    formData.append('cp_mean', inputConcave);
+    formData.append('sym_mean', inputSymmetry);
+    formData.append('fd_mean', inputFractal);
   
     let url = 'http://127.0.0.1:5000/mulher';
     fetch(url, {
@@ -173,8 +172,8 @@ const getList = async () => {
     --------------------------------------------------------------------------------------
   */
 
-  const insertList = (nameWoman, radius, texture, perimeter, area, smoothness, compactness, concavity, concave, symmetry,  fractal, outcome) => {
-    var item = [nameWoman, radius, texture, perimeter, area, smoothness, compactness, concavity, concave, symmetry, fractal, outcome];
+  const insertList = (nameWoman, rad_mean, tex_mean, perim_mean, area_mean, smoo_mean, comp_mean, concav_mean, cp_mean, sym_mean,  fd_mean, outcome) => {
+    var item = [nameWoman, rad_mean, tex_mean, perim_mean, area_mean, smoo_mean, comp_mean, concav_mean, cp_mean, sym_mean, fd_mean, outcome];
     var table = document.getElementById('myTable');
     var row = table.insertRow();
   
