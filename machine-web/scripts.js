@@ -63,12 +63,14 @@ const postItem = async (inputWoman, inputRadius, inputTexture, inputPerimeter, i
     method: 'post',
     body: formData
   })
-    .then((response) => response.json())
+    .then((response) => { 
+      response.json()
+      clearTable();
+      getList();    
+    }) 
     .catch((error) => {
       console.error('Error:', error);
     });
-  clearTable();
-  getList();
 }
 
 // Adicione a função clearTable para remover apenas as linhas de dados
